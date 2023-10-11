@@ -1,0 +1,37 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}

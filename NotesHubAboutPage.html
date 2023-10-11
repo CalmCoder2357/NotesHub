@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes Hub ! About Page</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet3.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet2.css">
+    <body background="pexels-scott-webb-1029624.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Notes Hub !</h1>
+        <p>........................................................</p>
+    </header>
+    <div>
+        <h2>
+            <nav>
+                <ul>
+                    <b>
+                    <li><a href="NotesHubHomePage.html">Home</a></li>
+                    <li>
+                        <a href="NotesHubDownloadPage.html">E-Books/Notes</a>
+                    </li>
+                    <li><a href="NotesHubQuestionPaper.html">BCA Question Papers</a></li>
+                    <li>
+                        <a href="https://bard.google.com/chat/cb0c3761d5fd4762">
+                            AI Assistance
+                        </a>
+                    </li>
+                    <li>
+                        <a href="NotesHubContactPage.html">Contact</a>
+                    </li>
+
+                    </b>
+                </ul>
+            </nav>
+        </h2>
+    </div>
+    <main>
+
+        <h2>Why our notes are a great choice</h2>
+
+        <ol>
+            <li>Our notes are comprehensive and informative.</li>
+            <li>Our notes are easy to read and understand.</li>
+            <li>Our notes are up-to-date with the latest information.</li>
+            <li>Our notes are written by experts in the field.</li>
+            <li>Our notes are almost free and accessible to everyone.</li>
+            <li>We have also have courses that can enhance your ability .</li>
+        </ol>
+
+        <h3>Try our notes today and see the difference!</h3>
+
+
+
+    </main>
+
+    <footer>
+        <p>
+            Some E-books available on our website belongs to different authors.If anyone has any objection with that please contact with us.They are just for educational purpose.
+        </p>
+        <p>THANKS FOR UNDERSTANDING OUR INTENTIONS.</p>
+        <p>E-Mail ID : calmcoders2357@gmail.com</p>
+        <p>Contact Person : Shailinya Saxena.</p>
+        <p>Successor E-Mail ID : abhishekprasad9549@gmail.com</p>
+        <p>Successor Person : Abhishek Prasad.</p>
+    </footer>
+    <center>
+        <h1>Instagram Profile:</h1>
+        <a href="https://instagram.com/calmcoder_2357?igshid=OGQ5ZDc2ODk2ZA=="><img src="Uiconstock-Socialmedia-Instagram.48.png" alt="Instagram logo"></a>
+    </center>
+    <center>
+        <h1>Share Us :</h1>
+
+        <button class="share-button" onclick="createShareableLink()">Share</button>
+    </center>
+
+    <script>
+    // JavaScript for creating a shareable link
+        function createShareableLink() {
+            // Generate a unique shareable link (you can modify this logic as per your requirement)
+            var shareableLink = 'https://noteshub.neocities.org/';
+
+
+            // Create a temporary text input element
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('type', 'text');
+            tempInput.setAttribute('value', shareableLink);
+            document.body.appendChild(tempInput);
+
+            // Select and copy the shareable link
+            tempInput.select();
+            document.execCommand('copy');
+
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+
+            // Add sprinkle animation to the share button
+            var shareButton = document.querySelector('.share-button');
+            shareButton.classList.add('sprinkles');
+
+            // Show a notification or perform any other action
+            alert('Shareable link copied to clipboard!');
+
+            // Remove the sprinkle animation after a delay
+            setTimeout(function () {
+                shareButton.classList.remove('sprinkles');
+            }, 1000);
+
+            // Open share options for WhatsApp
+            var whatsappUrl = 'https://wa.me/?text=' + encodeURIComponent(shareableLink);
+            window.open(whatsappUrl, '_blank');
+
+            // Open share options for Instagram
+            var instagramUrl = 'https://www.instagram.com/?url=' + encodeURIComponent(shareableLink);
+            window.open(instagramUrl, '_blank');
+
+            // Open share options for Google Drive
+            var driveUrl = 'https://drive.google.com/share?url=' + encodeURIComponent(shareableLink);
+            window.open(driveUrl, '_blank');
+        }</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes Hub ! Home</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet2.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet4.css">
+    <body background="pexels-scott-webb-1029624.jpg">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        <style>
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .announcement-box {
+                width: 300px;
+                height: 800px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin: 10px;
+                float: right;
+                animation: blink 2s infinite;
+            }
+        </style>
+        <style>
+            /* CSS for the share button */
+            .share-button {
+                display: inline-block;
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            /* CSS for the sprinkle animation */
+            .sprinkles {
+                position: relative;
+                display: inline-block;
+                animation: sprinkle-animation 1s infinite;
+            }
+
+            @keyframes sprinkle-animation {
+                0% {
+                    transform: translateY(-100%);
+                }
+
+                100% {
+                    transform: translateY(100%);
+                }
+            }
+        </style>
+        <body onload="blink()">
+            <body background="NotesHubWallpaer.jpg">
+                <style>
+                    nav ul {
+                        background-color: transparent;
+                    }
+
+                    div p {
+                        display: inline-block;
+                    }
+                </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Notes Hub !</h1>
+        <p>........................................................</p>
+    </header>
+
+    <div>
+        <h2>
+            <nav>
+                <ul>
+                    <b>
+
+                    <li>
+                        <a href="NotesHubDownloadPage.html">E-Books/Notes</a>
+                    </li>
+                    <li><a href="NotesHubQuestionPaper.html">BCA Question Papers</a></li>
+
+                    <li>
+                        <a href="https://t.me/GPT4Telegrambot">
+                            AI Assistance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="NotesHubAboutPage.html">About</a>
+                    </li>
+                    <li>
+                        <a href="NotesHubContactPage.html">Contact</a>
+                    </li>
+                    </b>
+                </ul>
+            </nav>
+        </h2>
+    </div>
+
+    <main>
+
+        <h2>Welcome to Notes Hub!</h2>
+
+        <p>We're so glad you're here. We're here to help you learn and succeed, with the best notes on the web. Our notes are comprehensive, informative, and easy to read and understand. They're also written by experts in the field, so you can be sure that you're getting the most accurate and up-to-date information.</p>
+
+        <p>We know that studying can be tough, so we want to make it as fun and enjoyable as possible. That's why we've included some good vibes and a joke on our Home page. We hope you enjoy them!</p>
+
+
+        <p>
+            <b>Joke:</b>Why did the scarecrow win an award?
+            Because he was outstanding in his field!...
+        </p>
+
+        <h3>Try our notes today and see the difference!</h3>
+
+
+
+    </main>
+    <div class="announcement-box">
+        <h2>Announcement :</h2>
+        <p>
+            1.  We have lot more than just notes and courses.
+            So , Please Visit Our Website Regularly.
+            And Share Us With Your Friends .
+
+        </p>
+        <p>2. We  Have Crossed A Milestone Of 1800 views.</p>
+        <p>3. ISRO Is Working On Some New Projects That Can Make BHARAT A Space Power.</p>
+        <P>Projects Are :</P>
+        <p>
+            Gaganyaan: India's first human spaceflight mission, scheduled to launch in 2024.
+        <p />
+        <p>
+            Chandrayaan-3: A lunar mission to explore the South Pole of the Moon, scheduled to launch in 2023.
+        </p>
+        <p>Aditya-L1: A solar mission to study the Sun, launched in September 2023.</p>
+        <p>NISAR: A radar imaging satellite mission to study the Earth's surface, scheduled to launch in 2023.</p>
+        <p>SPADEX: A satellite mission to study the Earth's atmosphere, scheduled to launch in 2024.</p>
+    </div>
+
+
+    <footer>
+        <p>Welcome Buddy !</p>
+        <p>Thank You For Supporting Us.</p>
+        <p>You're Welcome On Our Website With Open Arms.'</p>
+    </footer><center>
+        <h1>Share Us  :</h1>
+
+        <button class="share-button" onclick="createShareableLink()">Share</button>
+    </center>
+
+    <script>
+        // JavaScript for creating a shareable link
+        function createShareableLink() {
+            // Generate a unique shareable link (you can modify this logic as per your requirement)
+            var shareableLink = 'https://noteshub.neocities.org/';
+
+
+            // Create a temporary text input element
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('type', 'text');
+            tempInput.setAttribute('value', shareableLink);
+            document.body.appendChild(tempInput);
+
+            // Select and copy the shareable link
+            tempInput.select();
+            document.execCommand('copy');
+
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+
+            // Add sprinkle animation to the share button
+            var shareButton = document.querySelector('.share-button');
+            shareButton.classList.add('sprinkles');
+
+            // Show a notification or perform any other action
+            alert('Shareable link copied to clipboard!');
+
+            // Remove the sprinkle animation after a delay
+            setTimeout(function () {
+                shareButton.classList.remove('sprinkles');
+            }, 1000);
+
+            // Open share options for WhatsApp
+            var whatsappUrl = 'https://wa.me/?text=' + encodeURIComponent(shareableLink);
+            window.open(whatsappUrl, '_blank');
+
+            // Open share options for Instagram
+            var instagramUrl = 'https://www.instagram.com/?url=' + encodeURIComponent(shareableLink);
+            window.open(instagramUrl, '_blank');
+
+            // Open share options for Google Drive
+            var driveUrl = 'https://drive.google.com/share?url=' + encodeURIComponent(shareableLink);
+            window.open(driveUrl, '_blank');
+
+        }</script>
+    <!-- Default Statcounter code for Notes Hub !
+    https://noteshub.neocities.org/ -->
+    <script type="text/javascript">
+        var sc_project = 12928397;
+        var sc_invisible = 1;
+        var sc_security = "49fe39fe";
+    </script>
+    <script type="text/javascript"
+            src="https://www.statcounter.com/counter/counter.js"
+            async></script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics"
+               href="https://statcounter.com/" target="_blank">
+                <img class="statcounter"
+                     src="https://c.statcounter.com/12928397/0/49fe39fe/1/"
+                     alt="Web Analytics"
+                     referrerPolicy="no-referrer-when-downgrade">
+            </a>
+        </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+</body>
+</html>

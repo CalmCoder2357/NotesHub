@@ -1,0 +1,141 @@
+﻿<style >
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    background-color: transparent;
+}
+
+body {
+    background-image: url('milad-fakurian-E8Ufcyxz514-unsplash.jpg');
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+            nav ul li a {
+                color: #333;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+                nav ul li a:hover {
+                    background-color: #333;
+                    color: #fff;
+                }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.folder {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.file {
+    padding-left: 20px;
+    position: relative;
+}
+
+    .file:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #333;
+        border-radius: 50%;
+    }
+
+.share {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+    .share a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+nav ul {
+    background-color: transparent;
+}
+
+nav ul {
+    list-style:revert ;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 200px; /* set a fixed height for the container */
+}
+
+nav li {
+    flex: 1;
+    width: 100%;
+}
+
+nav a {
+    display: transparent;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+</style >
